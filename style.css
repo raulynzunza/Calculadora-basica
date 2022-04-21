@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@100&display=swap');
+
+*{
+    font-family: 'Anek Bangla';
+    color: #fff;
+}
+
+body{
+    margin: 0;
+    background-color: #494949;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculadora{
+    display: grid;
+    grid-template-columns: repeat(4,75px);
+    grid-template-rows: 160px repeat(5, 75px);
+    background-color: #c65601;
+    padding: 15px;
+    border-radius: 30px;
+    box-shadow: 15px 10px 2px 5px #77340133;
+}
+
+button{
+    cursor: pointer;
+    margin: 5px;
+    padding: 0;
+    border-radius: 15px;
+    font-size: 1.5em;
+    border: none;
+    background-color: #c65601;
+    box-shadow: 5px 5px 10px -3px #1717171f, -5px -5px 15px 3px #1717171f;
+    transition: all .1s ease-in-out;
+}
+
+button:hover{
+    transform: scale(1.1)
+}
+
+button:active{
+    background-color: #873d04;
+}
+
+.col-2{
+    grid-column: span 2;
+}
+
+.display{
+    grid-column: 1 / 5;
+    padding: 16px;
+    display: flex;
+    margin: 10px 10px 20px;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: #1b1b1b;
+    border-radius: 5px;
+    text-align: right;
+    justify-content: space-between;
+    word-break: break-all;
+}
+
+#valor-actual{
+    font-size: 1.5em;
+}
+
+#valor-anterior{
+    font-size: 2em;
+}
